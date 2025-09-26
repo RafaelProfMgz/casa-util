@@ -178,8 +178,8 @@ export default function HomePage() {
               <div
                 className={`consumption-card space-y-4 p-6 rounded-xl transition-all duration-300 ${
                   focusedField === "water"
-                    ? "bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 border-blue-300 dark:border-blue-600 shadow-lg scale-105"
-                    : "bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-blue-200 dark:border-blue-700"
+                    ? "bg-gradient-to-br from-blue-200 to-cyan-200 dark:from-blue-900/30 dark:to-cyan-900/30 border-blue-300 dark:border-blue-600 shadow-lg scale-105"
+                    : "bg-gradient-to-br from-blue-200 to-cyan-200 dark:from-blue-900/20 dark:to-cyan-900/20 border-blue-300 dark:border-blue-700"
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -245,8 +245,8 @@ export default function HomePage() {
               <div
                 className={`consumption-card space-y-4 p-6 rounded-xl transition-all duration-300 ${
                   focusedField === "energy"
-                    ? "bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 border-amber-300 dark:border-amber-600 shadow-lg scale-105"
-                    : "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700"
+                    ? "bg-gradient-to-br from-amber-200 to-orange-200 dark:from-amber-900/30 dark:to-orange-900/30 border-amber-300 dark:border-amber-600 shadow-lg scale-105"
+                    : "bg-gradient-to-br from-amber-200 to-orange-200 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700"
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -314,8 +314,8 @@ export default function HomePage() {
               <div
                 className={`consumption-card space-y-4 p-6 rounded-xl transition-all duration-300 ${
                   focusedField === "gas"
-                    ? "bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/30 border-red-300 dark:border-red-600 shadow-lg scale-105"
-                    : "bg-gradient-to-br from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 border-red-200 dark:border-red-700"
+                    ? "bg-gradient-to-br from-red-200 to-pink-200 dark:from-red-900/30 dark:to-pink-900/30 border-red-300 dark:border-red-600 shadow-lg scale-105"
+                    : "bg-gradient-to-br from-red-200 to-pink-200 dark:from-red-900/20 dark:to-pink-900/20 border-red-200 dark:border-red-700"
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -475,7 +475,7 @@ export default function HomePage() {
           </div>
         )}
 
-        <Card className="mt-8 shadow-lg border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30">
+        <Card className="mt-8 shadow-lg border-0 bg-gradient-to-r from-green-100 to-emerald-200 dark:from-green-950/30 dark:to-emerald-950/30">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-3 text-card-foreground">
               <div className="p-2 bg-green-500/10 rounded-lg">
@@ -488,13 +488,13 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-background/60 rounded-xl hover:bg-white/80 dark:hover:bg-background/80 transition-colors">
                 <div className="p-2 bg-blue-500/10 rounded-lg flex-shrink-0">
-                  <Droplets className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                  <Droplets className="h-5 w-5 text-blue-600 dark:text-blue-500" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-1">
                     Água
                   </h4>
-                  <span className="text-sm text-blue-800 dark:text-blue-200">
+                  <span className="text-md text-blue-800 dark:text-blue-200">
                     Banhos de 5 minutos economizam 80L/dia
                   </span>
                 </div>
@@ -507,7 +507,7 @@ export default function HomePage() {
                   <h4 className="font-semibold text-amber-900 dark:text-amber-100 mb-1">
                     Energia
                   </h4>
-                  <span className="text-sm text-amber-800 dark:text-amber-200">
+                  <span className="text-md text-amber-800 dark:text-amber-200">
                     Desligar standby economiza 10% na conta
                   </span>
                 </div>
@@ -520,7 +520,7 @@ export default function HomePage() {
                   <h4 className="font-semibold text-red-900 dark:text-red-100 mb-1">
                     Gás
                   </h4>
-                  <span className="text-sm text-red-800 dark:text-red-200">
+                  <span className="text-md text-red-800 dark:text-red-200">
                     Panela de pressão reduz tempo em 70%
                   </span>
                 </div>
